@@ -7,6 +7,7 @@ import {Routes,Route} from 'react-router-dom'
 import Header from './componets/Header'
 import Footer from './componets/Footer'
 import AddStudent from './componets/AddStudent'
+import EditStudent from './componets/EditStudent'
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='add' element={<AddStudent/>} />
-        {/* <Route path='header' element={<Header/>} /> */}
+        <Route path='edit' element={<EditStudent/>} />
       </Routes>
     <Footer/>
     </>

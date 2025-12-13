@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function home() {
   return (
@@ -13,6 +14,7 @@ function home() {
                         <th>PLACE</th>
                         <th>EMAIL</th>
                         <th>PHONE</th>
+                        <th>OPTIONS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,6 +24,10 @@ function home() {
                         <td>Malappuram</td>
                         <td>kdash@lum.com</td>
                         <td>8562545859</td>
+                        <td>
+                            <Link to={'edit'} className='m-2 btn'><i class="fa-solid fa-pen-to-square fa-xl" style={{color:' #74C0FC'}}></i></Link>
+                            <Link to={'edit'} className='m-2 btn'><i class="fa-solid fa-delete-left fa-xl" style={{color:' red'}}></i></Link>
+                        </td>
                     </tr>
                 </tbody>
             </table>
