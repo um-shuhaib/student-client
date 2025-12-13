@@ -6,15 +6,17 @@ import Home from "./componets/home"
 import {Routes,Route} from 'react-router-dom'
 import Header from './componets/Header'
 import Footer from './componets/Footer'
+import AddStudent from './componets/AddStudent'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
     <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='add' element={<AddStudent/>} />
         {/* <Route path='header' element={<Header/>} /> */}
       </Routes>
     <Footer/>
