@@ -3,24 +3,37 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from "./componets/home"
-import {Routes,Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Header from './componets/Header'
 import Footer from './componets/Footer'
 import AddStudent from './componets/AddStudent'
 import EditStudent from './componets/EditStudent'
-
+import { ToastContainer,Bounce,Flip } from 'react-toastify'
 function App() {
-  
+
 
   return (
     <>
-    <Header/>
+      <Header />
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='add' element={<AddStudent/>} />
-        <Route path='edit' element={<EditStudent/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='add' element={<AddStudent />} />
+        <Route path='edit' element={<EditStudent />} />
       </Routes>
-    <Footer/>
+      <Footer />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Flip}
+      />
     </>
   )
 }

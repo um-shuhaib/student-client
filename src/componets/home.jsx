@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { listStudents,deleteStudent } from '../api/fetchApi'
 import { useEffect } from 'react'
 import { useState } from 'react'
-
+import { toast } from 'react-toastify'
 
 function home() {
 
@@ -19,7 +19,8 @@ function home() {
 
     const deleteData=(id)=>{
         deleteStudent(id).then((res)=>{
-            alert("item deleted")
+            toast("item deleted")
+            // alert("item deleted")
         })
 
     }
