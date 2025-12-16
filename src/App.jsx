@@ -9,6 +9,8 @@ import Footer from './componets/Footer'
 import AddStudent from './componets/AddStudent'
 import EditStudent from './componets/EditStudent'
 import { ToastContainer,Bounce,Flip } from 'react-toastify'
+import './bootstrap.min.css'
+
 function App() {
 
 
