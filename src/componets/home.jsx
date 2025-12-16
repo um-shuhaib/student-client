@@ -55,7 +55,7 @@ function home() {
                                         <td>{stud.email}</td>
                                         <td>{stud.email}</td>
                                         <td>
-                                            <Link to={'edit'} className='m-2 btn'><i className="fa-solid fa-pen-to-square fa-xl" style={{ color: ' #74C0FC' }}></i></Link>
+                                            <Link to={`edit/${stud.id}`} className='m-2 btn'><i className="fa-solid fa-pen-to-square fa-xl" style={{ color: ' #74C0FC' }}></i></Link>
                                             <Link onClick={()=>{deleteData(stud.id)}} className='m-2 btn'><i className="fa-solid fa-delete-left fa-xl" style={{ color: ' red' }}></i></Link>
                                         </td>
                                     </tr>

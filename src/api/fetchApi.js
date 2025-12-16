@@ -11,3 +11,7 @@ export const deleteStudent=(id)=>{
 export const addStudent=(data)=>{
     return commonApi("http://127.0.0.1:8000/student/","POST",data)
 }
+
+export const getStudent=(id)=>{
+    return commonApi(`http://127.0.0.1:8000/student/${id}`,"GET","")
+}
